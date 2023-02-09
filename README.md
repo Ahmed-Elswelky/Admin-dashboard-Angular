@@ -1,3 +1,4 @@
+![projectGif](https://user-images.githubusercontent.com/122026057/217770149-3f87edb8-e4a5-4983-a8c4-20e61d16eeb2.gif)
 # Myproject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
