@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <a class="btn btn-outline-success mb-4 w-25 mt-4" routerLink="/users/new">Add New User</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                    <th scope="row">{{user.id}}</th>
+                    <td>{{user.name}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.password}}</td>
+                    <td>
+                        <a class="btn btn-warning mx-2" [routerLink]="['/users',user.id]">Edit User</a>
+                        <button class="btn btn-danger mx-2" (click)="removeUser(user.id)">Delete User</button>
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+
+</div>
